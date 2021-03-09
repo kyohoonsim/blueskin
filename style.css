@@ -22,15 +22,16 @@ html, body {
     white-space: normal;
     word-break: break-all;
     font-family: 'Nanum Gothic', sans-serif;
+    /* font-family: 'NEXON Lv1 Gothic OTF'; */
 }
 
 li {
     padding: 10px 5px;
-    /* border-top: solid lightgray 1px; */
+    border-bottom: solid #EEEEEE 1px;
 }
 
 li:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 header {
@@ -163,8 +164,18 @@ header a {
     margin: auto;
     box-shadow: lightgrey 1px 1px 5px 1px;
     margin-bottom: 20px;
-    
+    font-family: 'NEXON Lv1 Gothic OTF';
+    background-color: white;
 }
+
+.sidebar-element1 {
+    width: 100%;
+    margin: auto;
+    font-family: 'NEXON Lv1 Gothic OTF';
+    background-color: white;
+    margin-bottom: 0; 
+}
+
 
 .article-title {
     font-size: xx-large;
@@ -213,6 +224,8 @@ header a {
 #article-body, #protect-body, #tag-body {
     padding: 5px;
     line-height: 1.5;
+    font-size: large;
+    font-family: 'NEXON Lv1 Gothic OTF';
 }
 
 #article-body li {
@@ -245,6 +258,10 @@ header a {
     display: none;
 }
 
+
+#sidebar-category li {
+    border-bottom: none;
+}
 
 #sidebar-category > ul {
     margin: 0;
@@ -312,7 +329,7 @@ header a {
 
 
 #sidebar-category > ul > li > ul > li > a:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #sidebar-category > ul > li > ul > li > ul {
@@ -351,7 +368,7 @@ header a {
 
 .time {
     font-size:small;
-    float:right;
+    float:none;
     font-style: italic;
 }
 
@@ -416,6 +433,10 @@ header a {
 }
 
 
+#category-list-body {
+    font-family: 'NEXON Lv1 Gothic OTF';    
+}
+
 #category-list-body ul {
     margin: 0px;
     padding: 0px; 
@@ -444,13 +465,11 @@ header a {
 
 .numbox .selected {
     display: inline-block;
-    border: 2px solid aqua;
     box-shadow: lightgrey 1px 1px 5px 1px;
     color: white;
     background-color: #0096c6;
     text-decoration: none;
     width: 40px;
-    /* height: 25px; */
 }
 
 #copy {
@@ -462,6 +481,11 @@ header a {
 
 #copy a {
     color: white;
+    text-decoration: none;
+}
+
+#copyfont {
+    font-family: 'NEXON Lv1 Gothic OTF';
 }
 
 #guestbook-write {
@@ -556,28 +580,31 @@ header a {
 #guestbook #guestbook-list > ul > li > .guest_admin {
     padding: 5px;
     background-color: white;
+    border-left: #83C9E7 solid 5px;
 }
 
 #guestbook #guestbook-list > ul > li > .guest_general {
     padding: 5px;
     background-color: white;
+    border-left: #83C9E7 solid 5px;
 }
 
 #guestbook #guestbook-list > ul > li > .guest_secret {
     padding: 5px;
     background-color: white;
+    border-left: #83C9E7 solid 5px;
 }
 
 #guestbook #guestbook-list > ul > li > .guest_admin:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #guestbook #guestbook-list > ul > li > .guest_general:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #guestbook #guestbook-list > ul > li > .guest_secret:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #guestbook #guestbook-list > ul > li > ul > li > .guest_admin {
@@ -596,15 +623,15 @@ header a {
 }
 
 #guestbook #guestbook-list > ul > li > ul > li > .guest_admin:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #guestbook #guestbook-list > ul > li > ul > li > .guest_general:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #guestbook #guestbook-list > ul > li > ul > li > .guest_secret:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #guestbook #guestbook-list ul > li > ul {
@@ -633,28 +660,31 @@ header a {
 #comment-list > ul > li > .rp_admin {
     padding: 5px;
     background-color: white;
+    border-left: #83C9E7 solid 5px;
 }
 
 #comment-list > ul > li > .rp_general {
     padding: 5px;
     background-color: white;
+    border-left: #83C9E7 solid 5px;
 }
 
 #comment-list > ul > li > .rp_secret {
     padding: 5px;
     background-color: white;
+    border-left: #83C9E7 solid 5px;
 }
 
 #comment-list > ul > li > .rp_admin:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #comment-list > ul > li > .rp_general:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #comment-list > ul > li > .rp_secret:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #comment-list > ul > li > ul > li > .rp_admin {
@@ -673,15 +703,15 @@ header a {
 }
 
 #comment-list > ul > li > ul > li > .rp_admin:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #comment-list > ul > li > ul > li > .rp_general:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 #comment-list > ul > li > ul > li > .rp_secret:hover {
-    background-color: aqua;
+    background-color: lightcyan;
 }
 
 .reply-form-top {
@@ -731,6 +761,7 @@ header a {
 .reply-desc {
     padding: 5px;
     line-height: 1.5;
+    font-family: 'NEXON Lv1 Gothic OTF';
 }
 
 .reply-address a {
@@ -811,14 +842,20 @@ header a {
 
 
 div.another_category {
-    box-shadow: lightgrey 1px 1px 2px 1px;
+    /* box-shadow: lightgrey 1px 1px 2px 1px inset; */
+}
+
+div.another_category a {
+    text-decoration: none;
 }
 
 div.another_category h4 {
     font-size: 18px !important; 
+    font-family: 'Cafe24Ohsquare';
 }
 
 div.another_category table th a {
+    font-family: 'NEXON Lv1 Gothic OTF';
     font-size: 16px !important;
 }
 
@@ -877,6 +914,7 @@ div.another_category table th a {
         right: 0;
         top: 0;
         background-color: white;
+        border-left:#0096c6 solid 5px;
         overflow-x: hidden;
         overflow-y: visible;
         transition: 0.2s;
